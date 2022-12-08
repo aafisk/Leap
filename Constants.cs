@@ -1,7 +1,7 @@
 using System;
 using Microsoft.VisualBasic;
 
-namespace Unit05.Game
+namespace Constant
 {
     /// <summary>
     /// <para>A tasty item that snakes like to eat.</para>
@@ -22,12 +22,12 @@ namespace Unit05.Game
         public static string CAPTION = "Snake";
         public static int SNAKE_LENGTH = 8;
 
-        // public static Color RED = new Color(255, 0, 0);
-        // public static Color WHITE = new Color(255, 255, 255);
-        // public static Color YELLOW = new Color(255, 255, 0);
-        // public static Color GREEN = new Color(0, 255, 0);
-        // public static Color PURPLE = new Color(138, 43, 226);
-        // public static Color BLUE = new Color(0, 0, 255);
+        public static Color RED = new Color(255, 0, 0);
+        public static Color WHITE = new Color(255, 255, 255);
+        public static Color YELLOW = new Color(255, 255, 0);
+        public static Color GREEN = new Color(0, 255, 0);
+        public static Color PURPLE = new Color(138, 43, 226);
+        public static Color BLUE = new Color(0, 0, 255);
 
     }
 }
