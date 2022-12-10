@@ -22,12 +22,22 @@ namespace Constant
         public static string CAPTION = "Snake";
         public static int SNAKE_LENGTH = 8;
 
+        public static int JUMP_HEIGHT = -15;
+        public static int FALL_SPEED = 1;
+
         public static Color RED = new Color(255, 0, 0);
         public static Color WHITE = new Color(255, 255, 255);
         public static Color YELLOW = new Color(255, 255, 0);
         public static Color GREEN = new Color(0, 255, 0);
         public static Color PURPLE = new Color(138, 43, 226);
         public static Color BLUE = new Color(0, 0, 255);
+        public static Color ORANGE = new Color(255, 140, 0);
+        public static Color EMERALD = new Color(50, 168, 82);
+        public static Color LIGHT_PURPLE = new Color(139, 50, 168);
+        public static Color PINK = new Color(230, 69, 165);
+        public static Color BLACK = new Color(0, 0, 0);
+        public static Color LIGHT_ORANGE = new Color(235, 177, 52);
+        public static Color LIGHT_RED = new Color(235, 73, 52);
 
     }
 }

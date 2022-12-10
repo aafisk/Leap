@@ -3,9 +3,10 @@ using Constant;
 
 public class Actor 
 {
-    private Point position = new Point(0, 0);
+    protected Point position = new Point(0, 0);
     private Point velocity = new Point(0, 0);
     private Color color = Constants.WHITE;
+    private Rectangle rec = new Rectangle(0, 0, 0, 0);
 
     public Actor()
     {
@@ -17,7 +18,7 @@ public class Actor
         return position;
     }
 
-    public void SetPosition(Point position)
+    public virtual void SetPosition(Point position)
     {
         if (position == null)
         {
@@ -32,13 +33,13 @@ public class Actor
         return velocity;
     }
 
-    public void SetVelocity(Point velocity)
+    public void SetVelocity(int X, int Y)
     {
         if (velocity == null)
         {
             throw new ArgumentException("velocity can't be null");
         }
-        this.velocity = velocity;
+        this.velocity = new Point(X, Y);
     }
 
     /// Get and set color
