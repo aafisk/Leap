@@ -30,7 +30,7 @@ class Game {
         Player Player2 = new Player(new Point(Constants.MAX_X - 150, Constants.MAX_Y - 249), Constants.ORANGE);
 
         // Create score objects
-        Score Score1 = new Score(new Point(30, 15), "Player 1", Constants.RED); // insert color here
+        Score Score1 = new Score(new Point(30, 15), "Player 1", Constants.RED);
         Score Score2 = new Score(new Point(Constants.MAX_X - 175, 15), "Player 2", Constants.ORANGE);
 
         Timer Timer = new Timer(60, new Point(Constants.MAX_X / 2 - 75, 15));
@@ -73,7 +73,9 @@ class Game {
             moveActors.Execute();
 
             // Handle collisions
+
             // Player and platform
+            // P1
             foreach(Platform platform in platforms)
             {
                 if (!handleCollisions.HandlePlayerPlatform(Player1, platform))
@@ -82,6 +84,7 @@ class Game {
                 }
             }
 
+            // P2
             foreach(Platform platform in platforms)
             {
                 if (!handleCollisions.HandlePlayerPlatform(Player2, platform))
